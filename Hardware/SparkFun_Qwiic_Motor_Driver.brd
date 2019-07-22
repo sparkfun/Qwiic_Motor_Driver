@@ -25,7 +25,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -173,7 +173,7 @@
 <dimension x1="22.86" y1="22.86" x2="22.86" y2="25.4" x3="27.94" y3="24.13" textsize="1.016" layer="47" unit="inch"/>
 <dimension x1="0" y1="0" x2="0" y2="25.4" x3="-6.35" y3="12.7" textsize="1.016" layer="47" unit="inch"/>
 <dimension x1="0" y1="0" x2="25.4" y2="0" x3="12.7" y3="-11.43" textsize="1.016" layer="47" unit="inch" visible="yes"/>
-<text x="19.177" y="0.381" size="1.016" layer="16" font="vector" ratio="20" rot="SMR0">v01</text>
+<text x="19.177" y="0.381" size="1.016" layer="16" font="vector" ratio="20" rot="SMR0">v10</text>
 <text x="19.05" y="-25.4" size="1.778" layer="51" font="vector">Alex Wende</text>
 <wire x1="10.668" y1="2.286" x2="27.178" y2="2.286" width="4.5212" layer="48"/>
 <wire x1="6.223" y1="23.241" x2="27.051" y2="23.241" width="4.5212" layer="48"/>
@@ -2337,12 +2337,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.3048" y1="-0.127" x2="0.7112" y2="0.127" layer="1"/>
 <rectangle x1="-0.7112" y1="-0.127" x2="-0.3048" y2="0.127" layer="1"/>
 </package>
-<package name="SMT-JUMPER_2_NO_NO-SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
 <package name="SMT-JUMPER_2_NC_TRACE_NO-SILK">
 <smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
@@ -2355,6 +2349,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-0.1905" y="-0.127"/>
 </polygon>
 <rectangle x1="-0.2032" y1="-0.127" x2="0.2032" y2="0.127" layer="1"/>
+</package>
+<package name="SMT-JUMPER_2_NO_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
 </packages>
 </library>
@@ -3915,9 +3915,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="VALUE" x="13.716" y="7.493" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-7.747" y="-25.273" smashed="yes"/>
-<element name="JP4" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-PAD-2" x="14.351" y="6.096" smashed="yes" rot="MR90">
-<attribute name="NAME" x="15.621" y="5.188" size="0.4064" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="12.7" y="5.188" size="0.4064" layer="28" rot="MR90"/>
+<element name="JP4" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_NO-SILK" value="JUMPER-PAD-2" x="14.351" y="6.223" smashed="yes" rot="MR90">
+<attribute name="NAME" x="15.621" y="5.315" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="12.7" y="5.315" size="0.4064" layer="28" rot="MR90"/>
 </element>
 <element name="JP3" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-PAD-2" x="12.065" y="6.096" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.335" y="5.188" size="0.4064" layer="26" rot="MR90"/>
@@ -3927,9 +3927,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="NAME" x="11.049" y="5.188" size="0.4064" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="8.128" y="5.188" size="0.4064" layer="28" rot="MR90"/>
 </element>
-<element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_NO-SILK" value="JUMPER-PAD-2" x="7.493" y="6.223" smashed="yes" rot="MR90">
-<attribute name="NAME" x="8.763" y="5.315" size="0.4064" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="5.842" y="5.315" size="0.4064" layer="28" rot="MR90"/>
+<element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-PAD-2" x="7.493" y="6.096" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.763" y="5.188" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="5.842" y="5.188" size="0.4064" layer="28" rot="MR90"/>
 </element>
 <element name="JP6" library="SparkFun-Jumpers" package="SMT-JUMPER_3_2-NC_TRACE_NO-SILK" value="JUMPER-SMT_3_2-NC_TRACE_NO-SILK" x="2.286" y="7.239" smashed="yes" rot="MR90">
 <attribute name="NAME" x="3.556" y="5.969" size="0.4064" layer="26" rot="MR90"/>
@@ -4303,7 +4303,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="9.4514" y1="8.8164" x2="8.763" y2="8.128" width="0.2032" layer="1"/>
 <wire x1="8.763" y1="7.8566" x2="7.9836" y2="7.8566" width="0.2032" layer="16"/>
 <wire x1="7.9836" y1="7.8566" x2="7.493" y2="7.366" width="0.2032" layer="16"/>
-<wire x1="7.493" y1="7.366" x2="7.493" y2="6.731" width="0.2032" layer="16"/>
+<wire x1="7.493" y1="7.366" x2="7.493" y2="6.5024" width="0.2032" layer="16"/>
 <contactref element="U2" pad="22"/>
 <wire x1="9.4514" y1="9.319" x2="9.4514" y2="8.8164" width="0.2032" layer="1"/>
 </signal>
@@ -4333,7 +4333,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <via x="12.065" y="7.493" extent="1-16" drill="0.381"/>
 <wire x1="12.065" y1="7.493" x2="13.97" y2="7.493" width="0.2032" layer="16"/>
 <wire x1="13.97" y1="7.493" x2="14.351" y2="7.112" width="0.2032" layer="16"/>
-<wire x1="14.351" y1="7.112" x2="14.351" y2="6.5024" width="0.2032" layer="16"/>
+<wire x1="14.351" y1="7.112" x2="14.351" y2="6.731" width="0.2032" layer="16"/>
 <contactref element="U2" pad="25"/>
 <wire x1="10.9514" y1="9.319" x2="10.9514" y2="8.6066" width="0.2032" layer="1"/>
 </signal>
@@ -4453,12 +4453,12 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,1,0c85ab2b914c0898"/>
 <approved hash="19,1,9971a16c14c412a3"/>
 <approved hash="19,1,5beb5e347cf67929"/>
-<approved hash="19,16,39cabd0fa23000f7"/>
-<approved hash="19,16,7a29d834c50b4114"/>
 <approved hash="19,16,db8348d87ce0c5b9"/>
 <approved hash="19,16,de9573ca47f2c0af"/>
 <approved hash="19,16,bea438bb0e83a29e"/>
 <approved hash="19,16,b9aa3fb5098da590"/>
+<approved hash="19,16,a4283aed2fd78b10"/>
+<approved hash="19,16,f1cb55d642ecdcf3"/>
 </errors>
 </board>
 </drawing>
