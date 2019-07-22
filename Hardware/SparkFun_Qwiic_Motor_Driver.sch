@@ -19235,8 +19235,7 @@ Used as a test point connection for pogo pins or other debugging tools.
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="2xCONN-08399" constant="no"/>
-<attribute name="SF_ID" value="2xPRT-08084" constant="no"/>
+<attribute name="PROD_ID" value="CONN-15519"/>
 </technology>
 </technologies>
 </device>
@@ -21015,6 +21014,8 @@ the jumper is bridged.</text>
 <wire x1="109.22" y1="185.42" x2="109.22" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="63.5" y1="185.42" x2="63.5" y2="99.06" width="0.1524" layer="97" style="shortdash"/>
 <text x="5.08" y="172.72" size="2.54" layer="97" font="vector" ratio="15">VIN: 11V MAX</text>
+<text x="208.28" y="83.82" size="1.27" layer="97" font="vector">Cut traces to remove
+pull up resistors</text>
 </plain>
 <instances>
 <instance part="C8" gate="G$1" x="86.36" y="15.24" smashed="yes">

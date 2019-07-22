@@ -3990,8 +3990,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 </element>
 <element name="J2" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-4" value="Motor Connections" x="17.907" y="22.606" smashed="yes" rot="R180">
 <attribute name="NAME" x="17.907" y="20.193" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
-<attribute name="PROD_ID" value="2xCONN-08399" x="17.907" y="22.606" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SF_ID" value="2xPRT-08084" x="17.907" y="22.606" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PROD_ID" value="CONN-15519" x="17.907" y="22.606" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="17.907" y="24.892" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="SCREWTERMINAL-3.5MM-2" value="Power In" x="11.049" y="2.794" smashed="yes">
