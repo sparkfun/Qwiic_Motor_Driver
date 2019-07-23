@@ -19235,7 +19235,7 @@ Used as a test point connection for pogo pins or other debugging tools.
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CONN-15519"/>
+<attribute name="PROD_ID" value="CONN-14485"/>
 </technology>
 </technologies>
 </device>
