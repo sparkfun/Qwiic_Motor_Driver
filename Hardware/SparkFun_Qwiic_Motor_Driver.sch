@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20969,29 +20969,29 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="2.54" y="53.34" size="2.54" layer="94" font="vector" ratio="15">PSoC Power and Filtering</text>
-<text x="210.82" y="180.34" size="2.54" layer="94" font="vector" ratio="15">Config Jumpers</text>
+<text x="205.74" y="180.34" size="2.54" layer="94" font="vector" ratio="15">Config Jumpers</text>
 <text x="166.624" y="11.43" size="2.54" layer="94" font="vector">Alex Wende</text>
 <text x="2.54" y="93.98" size="2.54" layer="94" font="vector" ratio="15">PSoC I/O</text>
 <text x="237.49" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 <text x="175.26" y="86.36" size="1.27" layer="97" font="vector" rot="MR180">P3.2 swd_io[0]
 P3.3 swd_clk[0]
 </text>
-<text x="211.836" y="167.894" size="1.778" layer="97" font="vector" align="top-left">0000: UART
-0001: SPI
-0010: Slave device
-    (User port unused)
+<text x="211.836" y="167.894" size="1.778" layer="97" font="vector" align="top-left">0000: UART 9600
 0011: I2C addr 0x58
 0100: I2C addr 0x59
 0101: I2C addr 0x5A
 0110: I2C addr 0x5B
-   (...)
+0111: I2C addr 0x5C
+1000: I2C addr 0x5D
+1001: I2C addr 0x5E
+1010: I2C addr 0x5F
+1011: I2C addr 0x60
 1100: I2C addr 0x61
-1101: I2C addr 0x62
-1110: I2C addr 0x63
-1111: Reserved</text>
-<text x="211.836" y="178.054" size="1.778" layer="97" font="vector" align="top-left">The default (all open)  is the
-UART mode.  A '1' indicates
-the jumper is bridged.</text>
+1101: UART 57600
+1110: UART 115200</text>
+<text x="205.74" y="178.054" size="1.778" layer="97" font="vector" align="top-left">The default (1000)  sets the 
+I2C address to 0x5D. A '1' 
+indicates the jumper is bridged.</text>
 <text x="2.54" y="180.34" size="2.54" layer="94" font="vector" ratio="15">Connectors</text>
 <text x="66.04" y="180.34" size="2.54" layer="94" font="vector" ratio="15">Status LED</text>
 <text x="111.76" y="180.34" size="2.54" layer="94" font="vector" ratio="15">H-Bridge Driver</text>
