@@ -15,7 +15,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Library](GitHub library URL)** - <LANGUAGE> library for the <PRODUCT NAME>.
+* **[Serial Controlled Motor Driver Library](https://github.com/sparkfun/SparkFun_Serial_Controlled_Motor_Driver_Arduino_Library)** - Arduino library for the Qwiic Motor Driver.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/hookup-guide-for-the-qwiic-motor-driver)** - Basic hookup guide for the Qwiic Motor Driver.
 
 License Information
