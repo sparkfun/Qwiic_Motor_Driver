@@ -5,8 +5,9 @@ SparkFun Qwiic_Motor_Driver
 
 [*SparkFun Qwiic Motor Driver (15451)*](https://www.sparkfun.com/products/15451)
 
-<Basic description of the part.>
+The SparkFun Qwiic Motor Driver takes all the great features of the Serial Controlled Motor Driver (SCMD) and miniaturizes them, adding [Qwiic](https://www.sparkfun.com/qwiic) ports for plug and play functionality. Boasting the same 4245 PSOC and 2-channel motor ports as the SCMD, the SparkFun Qwiic Motor Driver is designed to communicate over I<sup>2</sup>C to make setting up your next robotic project as fast and easy as possible! Utilizing our handy Qwiic system, no soldering is required to connect it to the rest of your system. 
 
+With 1.2A steady state drive per channel (1.5A peak) and 127 levels of DC drive strength, this little Qwiic board is perfect for your small DC motor driver needs. Since the Qwiic Motor Driver is a 3.3V logic device, you'll need to use a logic level converter to interface to 5V.
 
 Repository Contents
 -------------------
